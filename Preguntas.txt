@@ -1,0 +1,5 @@
+Preguntas clase 28
+Pregunta 2
+¿Cual es la interfaz que implementa dbset para realizar conultas con linq?
+LA interfaz es IQueryable
+
