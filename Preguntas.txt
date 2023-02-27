@@ -3,3 +3,35 @@ Pregunta 2
 ¿Cual es la interfaz que implementa dbset para realizar conultas con linq?
 LA interfaz es IQueryable
 
+
+Preguntas clase 29
+Pregunta 1
+¿En el approach CodeFirst de EF, debo tener una base de datos creada para edsarrollar mi app?
+No hace falta
+
+Pregunta 2
+¿Que paquetes nuget debo instalar para trabajar con EF utilizando codefirst y migrations?
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer
+
+
+Preguntas clase 30
+Pregunta 1
+¿Cuales son las 2 dependencias que debemos instalar para poder usar dapper en sqlServer?
+Dapper
+System.Data.SqlClient
+
+Pregunta 2
+¿Cual es el nombre del método que usar dapper para obtener el primer registro o un nulleable?
+el método es QueryFirstOrDefault()
+
+
+Preguntas clase 30
+Pregunta 1
+¿Qué devuelve el método execute de dapper?
+devuelve el número de filas afectadas
+
+
+
+

@@ -1,0 +1,17 @@
+﻿@model VehicleModel
+@{
+}
+
+
+<h1>Remove vehicle</h1>
+<hr />
+
+<form asp-action="Delete" asp-route-id="@Model.Id">
+    <div class="row">
+        <partial name="_formFields" model="Model" />
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary mb-3">Remove</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,26 @@
+﻿@model VehicleModel
+
+<div class="mb-3">
+    <label for="dominio" class="form-label">Dominio</label>
+    <input asp-for="Dominio" type="text" class="form-control" id="dominio">
+    @Html.ValidationMessageFor(x=>x.Dominio, "", new {@class="text-danger"})
+</div>
+<div class="mb-3">
+    <label for="numeroChasis" class="form-label">Numero Chasis</label>
+    <input asp-for="NumeroChasis" type="text" class="form-control" id="numeroChasis">
+    @Html.ValidationMessageFor(x=>x.NumeroChasis, "", new {@class="text-danger"})
+
+</div>
+<div class="mb-3">
+    <label for="propietario" class="form-label">Propietario</label>
+    <input asp-for="Propietario" type="text" class="form-control" id="propietario">
+    @Html.ValidationMessageFor(x=>x.Propietario, "", new {@class="text-danger"})
+
+</div>
+<div class="mb-3">
+    <label for="anioFabricacion" class="form-label">Año de fabricación</label>
+    <input asp-for="AnioFabricacion" type="text" class="form-control" id="anioFabricacion">
+    @Html.ValidationMessageFor(x=>x.AnioFabricacion, "", new {@class="text-danger"})
+
+</div>
+

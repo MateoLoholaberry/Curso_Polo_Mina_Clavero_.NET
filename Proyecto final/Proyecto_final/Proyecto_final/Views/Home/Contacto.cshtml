@@ -1,0 +1,24 @@
+﻿@model Contacto 
+@{
+    ViewData["Title"] = "Contacto";
+    ViewData["Image"] = "/assets/img/contact-bg.jpg";
+    ViewData["TitleHeader"] = "Contacto";
+    ViewData["SubTitleHeader"] = "Contactanos y seguramente nunca te responderemos :)";
+}
+
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <p>Complete el formulario y nos pondremos en contacto en la brevedad</p>
+            
+            <div class="my-5">
+                <form asp-action="Contacto">
+                    <partial name="_formContacto" model="@Model" />
+                    <button type="submit" value="Enviar" class="btn btn-primary text-uppercase">Enviar consulta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

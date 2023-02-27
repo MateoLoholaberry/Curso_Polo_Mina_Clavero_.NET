@@ -1,0 +1,20 @@
+﻿@model VehicleModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Edit vehicle";
+}
+
+<h1>Update vehicle</h1>
+<hr />
+
+<form asp-action="Update" asp-route-id="@Model.Id">
+    <div class="row">
+        <partial name="_formFields" model="Model" />
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary mb-3">Upadate</button>
+        </div>
+    </div>
+</form>

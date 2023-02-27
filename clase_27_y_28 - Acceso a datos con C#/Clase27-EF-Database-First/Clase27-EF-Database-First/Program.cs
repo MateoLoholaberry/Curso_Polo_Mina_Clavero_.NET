@@ -102,5 +102,5 @@ if (anyCustomer)
 }
 else
 {
-    Console.WriteLine("El idCustiomer ingresado no existe en la bd");
+    Console.WriteLine("El idCustomer ingresado no existe en la bd");
 }

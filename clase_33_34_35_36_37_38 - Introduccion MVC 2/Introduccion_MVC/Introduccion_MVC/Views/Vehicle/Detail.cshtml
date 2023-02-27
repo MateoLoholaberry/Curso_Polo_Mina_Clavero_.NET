@@ -1,0 +1,12 @@
+﻿@model VehicleModel
+@{
+}
+
+<h1>Update vehicle</h1>
+<hr />
+
+<form asp-action="Update" asp-route-id="@Model.Id">
+    <div class="row">
+        <partial name="_formFields" model="Model"/>
+    </div>
+</form>

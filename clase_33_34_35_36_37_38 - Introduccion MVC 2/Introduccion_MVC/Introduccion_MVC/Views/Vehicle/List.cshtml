@@ -1,0 +1,40 @@
+﻿@*@model VehicleListViewModel*@
+@{
+    ViewData["Title"] = ViewData["miTitulo"];
+}
+
+<div class="row">
+    <div class="col-12">
+        <a class="btn btn-success" asp-action="New" asp-controller="Vehicle">Nuevo</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Dominio</th>
+                    <th>año de fabricación</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var vehiculo in ViewBag.Vehicles)
+                {
+                    <tr>
+                        <td>@vehiculo.Id</td>
+                        <td>@vehiculo.Dominio</td>
+                        <td>@vehiculo.AnioFabricacion</td>
+                        <td>
+                            <a class="btn btn-primary" asp-controller="Vehicle" asp-action="Detail" asp-route-id="@vehiculo.Id">Ver</a>
+                            <a class="btn btn-warning" asp-controller="Vehicle" asp-action="Edit" asp-route-id="@vehiculo.Id">Editar</a>
+                            <a class="btn btn-danger" asp-controller="Vehicle" asp-action="Remove" asp-route-id="@vehiculo.Id">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
